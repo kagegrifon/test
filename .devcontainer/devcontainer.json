@@ -1,0 +1,22 @@
+{
+  "name": "radar-secure",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "postCreateCommand": "pip install -r requirements.txt && pip install pip-audit && npm install -g snyk",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Радар",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
