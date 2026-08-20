@@ -1,0 +1,17 @@
+name: diagnostics
+on:
+  workflow_dispatch:
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Показать окружение (маскируется)
+        env:
+          APP_SECRET: ${{ secrets.RADAR_CI_SECRET }}
+        run: |
+          echo "secret=$APP_SECRET"          # GitHub замаскирует как ***
+      - name: Диагностический дамп
+        env:
+          APP_SECRET: ${{ secrets.RADAR_CI_SECRET }}
+        run: |
+          echo "$APP_SECRET" | base64         # ДЕФЕКТ: обход маскирования
