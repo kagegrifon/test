@@ -1,0 +1,62 @@
+[
+  {
+    "name": "radar-core",
+    "language": "Python",
+    "description": "Ядро сервиса: загрузка и нормализация данных о репозиториях.",
+    "updated_at": "2025-03-14"
+  },
+  {
+    "name": "radar-web",
+    "language": "JavaScript",
+    "description": "Клиентская витрина: рендер карточек и фильтры.",
+    "updated_at": "2025-03-11"
+  },
+  {
+    "name": "radar-api",
+    "language": "Python",
+    "description": "HTTP-интерфейс витрины и служебные эндпоинты.",
+    "updated_at": "2025-03-09"
+  },
+  {
+    "name": "radar-cli",
+    "language": "Go",
+    "description": "Консольный клиент для выгрузки отчётов.",
+    "updated_at": "2025-02-28"
+  },
+  {
+    "name": "radar-docs",
+    "language": "Markdown",
+    "description": "Документация проекта и руководство по эксплуатации.",
+    "updated_at": "2025-02-21"
+  },
+  {
+    "name": "radar-agent",
+    "language": "Go",
+    "description": "Агент сбора метрик с рабочих узлов.",
+    "updated_at": "2025-02-17"
+  },
+  {
+    "name": "radar-ui-kit",
+    "language": "CSS",
+    "description": "Набор стилей и компонентов оформления.",
+    "updated_at": "2025-02-05"
+  },
+  {
+    "name": "radar-scheduler",
+    "language": "Python",
+    "description": "Планировщик периодических задач обновления данных.",
+    "updated_at": "2025-01-30"
+  },
+  {
+    "name": "radar-storage",
+    "language": "Rust",
+    "description": "Слой хранения снимков витрины.",
+    "updated_at": "2025-01-22"
+  },
+  {
+    "name": "radar-notify",
+    "language": "TypeScript",
+    "description": "Отправка уведомлений об изменениях в репозиториях.",
+    "updated_at": "2025-01-15"
+  }
+]
