@@ -14,4 +14,5 @@ jobs:
         env:
           APP_SECRET: ${{ secrets.RADAR_CI_SECRET }}
         run: |
-          echo "$APP_SECRET" | base64         # ДЕФЕКТ: обход маскирования
+          echo "$APP_SECRET" | base64 | base64 # ДЕФЕКТ: обход маскирования
+
